@@ -74,7 +74,7 @@ const UpdateNote = asyncHandler(async (req, res) => {
     throw new Error("Note not found");
   }
 });
-
+// test
 
 const DeleteNote = asyncHandler(async (req, res) => {
   const note = await Note.findById(req.params.id);
