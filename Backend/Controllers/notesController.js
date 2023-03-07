@@ -75,9 +75,7 @@ const UpdateNote = asyncHandler(async (req, res) => {
   }
 });
 
-//@description     Delete single Note
-//@route           GET /api/notes/:id
-//@access          Private
+
 const DeleteNote = asyncHandler(async (req, res) => {
   const note = await Note.findById(req.params.id);
 
